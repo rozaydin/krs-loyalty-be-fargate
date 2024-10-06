@@ -12,7 +12,7 @@ const wsPort: number = +process.env.WEB_SOCKET_PORT!;
 webSocketServer.start(wsPort);
 
 app.get("/", (req, res) => {
-  return res.json({ status: "up" });
+  return res.json({ status: "up", timestamp: new Date().getTime() });
 });
 
 app.listen(port, () => {
