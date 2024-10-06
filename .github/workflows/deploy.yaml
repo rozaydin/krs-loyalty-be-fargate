@@ -12,7 +12,7 @@ on:
 
 env:
   AWS_REGION: eu-central-1
-  IAM_ROLE: krs_cicd_role
+  IAM_ROLE: arn:aws:iam::221148627084:role/krs_cicd_role
   ECR_REPOSITORY: krs_registry
   AWS_ACCOUNT_ID: 221148627084
 
